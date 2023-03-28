@@ -1,7 +1,7 @@
 # GeoTools Coding Just For Fun 🗺️
 
 Simple GeoTools Module Testing Repository.<br>
-> Remark : Please note that all code is written based on JDK 17. Please keep this in mind.
+> Remark : Please note that all code is written based on JDK 17. Please keep this in mind.<br>
 > Remark : We have set the version of GeoTools to 27.2 because it is the minimum version compatible with Java 17. 
 
 <br><br>
