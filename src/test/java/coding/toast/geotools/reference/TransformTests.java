@@ -47,8 +47,8 @@ public class TransformTests {
 		MathTransform transform = CRS.findMathTransform(sourceCrs, targetCrs, true);
 		Point transformPoint = (Point) JTS.transform(sourcePoint, transform);
 		
-		System.out.println("좌표변경 전(EPSG:4326) Point = " + sourcePoint);
-		System.out.println("좌표변경 후(EPSG:5179) Point = " + transformPoint);
+		System.out.println("Point before transformation (EPSG:4326) = " + sourcePoint);
+		System.out.println("Point after transformation (EPSG:5179) = " + transformPoint);
 		
 		// Uncomment the code below if you want to see it visually!
         /*if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
