@@ -45,14 +45,12 @@
             <version>${geotools.version}</version>
         </dependency>
 
-        <!-- EPSG, PROJ 등의 정보를 참조하려면 반드시 필요한 artifact (1) -->
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-epsg-hsql</artifactId>
             <version>${geotools.version}</version>
         </dependency>
 
-        <!-- EPSG, PROJ 등의 정보를 참조하려면 반드시 필요한 artifact (2) -->
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-referencing</artifactId>
