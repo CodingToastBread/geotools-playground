@@ -10,6 +10,6 @@ Simple GeoTools Module Testing Repository.<br>
 
 Here is a list of tasks that I have done so far.
 
-- How To Transform Point CRS one to another
-  - [data uri and file converting in two seperate method](src/test/java/coding/toast/geotools/reference/TransformTests.java)
+- About Reference
+  - [How To Transform Point CRS one to another](src/test/java/coding/toast/geotools/reference/TransformTests.java)
 
