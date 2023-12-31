@@ -43,7 +43,7 @@ public class ShapeFileMetaDataReadTests {
 		// (3) Query schema information
 		// SimpleFeatureType schema = shapeFileDataStore.getSchema();
 		SimpleFeatureType schema = shapeFileDataStore.getSchema(typeName);
-		System.out.println("\nSchema Information Query: " + schema);
+		System.out.println("\n(3) Schema Information Query: " + schema);
 		
 		// (4) Extract geometry attribute name
 		// Note: There is no attribute for geometry in the dbf file.
