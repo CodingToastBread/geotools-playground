@@ -38,6 +38,22 @@
     </repositories>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+
+        <!-- dependency for PostGIS -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.geotools.jdbc</groupId>
+            <artifactId>gt-jdbc-postgis</artifactId>
+            <version>${geotools.version}</version>
+        </dependency>
+        <!-- dependency for PostGIS -->
 
         <dependency>
             <groupId>org.geotools</groupId>
@@ -45,6 +61,15 @@
             <version>${geotools.version}</version>
         </dependency>
 
+        <!--https://docs.geotools.org/latest/userguide/library/referencing/index.html-->
+        <!--
+            gt-epsg-hsql is an implementation of the gt-referencing API.
+            Note that there is another implementation of the gt-referencing API called gt-epsg-wkt,
+            but it is not recommended to use it.
+            gt-epsg-wkt may have difficulty translating WKT strings specified in prj files properly.
+            For example, if a prj file using the 5186 coordinate system is written in ESRI WKT,
+            gt-epsg-wkt may not extract the EPSG code correctly.
+        -->
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-epsg-hsql</artifactId>

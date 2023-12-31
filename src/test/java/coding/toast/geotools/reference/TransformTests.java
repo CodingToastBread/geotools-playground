@@ -14,7 +14,6 @@ import org.opengis.referencing.crs.CoordinateReferenceSystem;
 import org.opengis.referencing.operation.MathTransform;
 import org.opengis.referencing.operation.TransformException;
 
-import java.awt.*;
 import java.io.IOException;
 import java.net.URI;
 
@@ -49,12 +48,6 @@ public class TransformTests {
 		
 		System.out.println("Point before transformation (EPSG:4326) = " + sourcePoint);
 		System.out.println("Point after transformation (EPSG:5179) = " + transformPoint);
-		
-		// Uncomment the code below if you want to see it visually!
-        /*if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
-            Desktop.getDesktop().browse(createEpsgIoURI("4326", sourcePoint, 18));
-            Desktop.getDesktop().browse(createEpsgIoURI("5179", transformPoint, 18));
-        }*/
 		
 	}
 	
