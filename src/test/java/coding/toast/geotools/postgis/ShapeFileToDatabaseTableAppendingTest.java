@@ -67,7 +67,7 @@ public class ShapeFileToDatabaseTableAppendingTest {
 		);
 		
 		// Target table name for data insert
-		String targetTableName = "data_insert_test";
+		String targetTableName = "geotools_pk_test3";
 		// Caution! There must be a numeric primary key in the table where you want to insert data!!!
         /*
         -- table DDL
