@@ -67,22 +67,21 @@ public class ShapeFileToDatabaseTableAppendingTest {
 		);
 		
 		// Target table name for data insert
-		String targetTableName = "geotools_pk_test3";
+		String targetTableName = "sample";
 		// Caution! There must be a numeric primary key in the table where you want to insert data!!!
         /*
         -- table DDL
-		create table public.data_appending_test
+		create table public.sample
 		(
 		    fid  integer not null
-		        constraint new_table_pkey
-		            primary key,
+						primary key,
 		    id   bigint,
 		    name varchar,
 		    geom geometry(Point, 5186)
 		);
 		
 		create index spatial_new_table_geom
-		    on public.data_appending_test using gist (geom);
+		    on public.sample using gist (geom);
          */
 		
 		// Check if the table really exists in the database
