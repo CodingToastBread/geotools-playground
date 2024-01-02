@@ -21,7 +21,7 @@ public class OpenEpsgMapUtil {
 	public static void showMap(int epsgCode, double x, double y, int zIndex) {
 		if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
 			try {
-				Desktop.getDesktop().browse(createEpsgIoURI(epsgCode, x, y, 18));
+				Desktop.getDesktop().browse(createEpsgIoURI(epsgCode, x, y, zIndex));
 			} catch (IOException e) {
 				throw new IllegalStateException("Fail to launch default browser!!");
 			}
