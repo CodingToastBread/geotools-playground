@@ -170,10 +170,10 @@ public class ShapeFileToDatabaseTableAppendingTest {
 			}
 			
 		} catch (Exception e) {
-			if (Objects.nonNull(transaction)) transaction.rollback();
+			if (Objects.nonNull(transaction)) try {transaction.rollback();} catch (IOException ex) {/* ignore */}
 			e.printStackTrace(System.err);
 		} finally {
-			if (Objects.nonNull(transaction)) transaction.close();
+			if (Objects.nonNull(transaction)) try {transaction.close();} catch (IOException ex) {/* ignore */}
 			postGisDataStore.dispose();
 			shapeFileDataStore.dispose();
 		}
